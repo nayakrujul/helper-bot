@@ -1,19 +1,20 @@
 from setuptools import setup, find_packages
 
-long_description = 'A very concise language for handling numbers - read the docs at https://www.github.com/nayakrujul/numlang-9ee9'
+long_description = 'A command-line bot which can do a lot of things - read the docs at https://www.github.com/nayakrujul/helper-bot'
 
 setup(
-  name = 'numlang-9ee9',
-  version = '3.0',
+  name = 'helper-bot',
+  version = '0.1',
   license='Apache',
-  description = 'A very concise language for handling numbers.',
+  description = 'A command-line bot which can do a lot of things',
   author = 'Rujul Nayak',
   author_email = 'rujulnayak@outlook.com',
-  url = 'https://github.com/nayakrujul/numlang-9ee9',
-  download_url = 'https://github.com/nayakrujul/numlang-9ee9/archive/refs/tags/v_01.tar.gz',
-  keywords = ['language'],
+  url = 'https://github.com/nayakrujul/helper-bot',
+  download_url = 'https://github.com/nayakrujul/helper-bot/archive/refs/tags/v_01.tar.gz',
+  keywords = ['bot', 'command-line'],
   install_requires=[
-      ],
+    'pytz'
+  ],
   classifiers=[
     'Development Status :: 3 - Alpha', 
     'Intended Audience :: Developers',
@@ -32,7 +33,9 @@ setup(
   packages = find_packages(),
   entry_points = {
     'console_scripts': [
-      'numlang = numlang.nl:from_console'
+      'randint = helper_bot.scripts:randint',
+      'output = helper_bot.scripts:output',
+      'timein = helper_bot.scripts:timein'
     ]
   }
 )
