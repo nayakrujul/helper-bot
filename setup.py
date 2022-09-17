@@ -4,7 +4,7 @@ long_description = 'A command-line bot which can do a lot of things - read the d
 
 setup(
   name = 'helper-bot',
-  version = '1.1',
+  version = '1.2',
   license='Apache',
   description = 'A command-line bot which can do a lot of things',
   author = 'Rujul Nayak',
