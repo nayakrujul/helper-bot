@@ -17,7 +17,7 @@ def output():
     parser.add_argument('exp', metavar='exp', type=str, nargs=1, help='the expression to evaluate and output')
     args = parser.parse_args()
     try:
-        print(eval(args.exp[0], {'exec': None, 'eval': None, 'open': None}))
+        print(eval(args.exp[0], {'exec': None, 'eval': None, 'open': None, '__import__': None}))
     except Exception as e:
         print('\033[1;31mSomething went wrong:', e, '\033[0m')
  
