@@ -1,0 +1,5 @@
+[console_scripts]
+output = helper_bot.scripts:output
+randint = helper_bot.scripts:randint
+timein = helper_bot.scripts:timein
+
