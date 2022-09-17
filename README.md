@@ -46,6 +46,17 @@ It takes one argument:
 
 * `exp`: the expression to evaluate and output
 
+### Safety
+
+For safety reasons, the following methods are unsupported:
+
+* `__import__`
+* `eval`
+* `exec`
+* `open`
+
+An error will be raised if one of these is used.
+
 ## timein
 
 ### Usage
